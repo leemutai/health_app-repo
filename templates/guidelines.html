@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>guidelines</title>
+</head>
+<body>
+<h3>COVID safety guidelines</h3>
+
+<ol>
+ {% for guideline in guidelines %}
+    <li>{{guideline}}</li>
+    {% endfor %}
+</ol>
+
+</body>
+</html>

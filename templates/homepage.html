@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <style type="text/css">
+        a{
+        background-color:orange;
+        padding:20px;
+        }
+    </style>
+</head>
+<body>
+<a href="/">HOME</a>
+<a href="/booking">BOOKING</a>
+<a href="/viewbooking">VIEW BOOKING</a>
+<a href="/covid-guidelines">CIVID GUIDELINES</a>
+
+<h1>Welcome to Our Health Web App</h1>
+<p>For news and information concerning your health.</p>
+
+<img src="./static/hospital1.jpg">
+<h5>Know your BMI</h5>
+<p>tell us your weight and height</p>
+<form method="post" action="/bmi">
+    <label>Height</label><br>
+    <input type="text" name="height"><br>
+    <label>Weight</label><br>
+    <input type="text" name="weight"><br>
+    <input type="submit" name="submit"><br>
+    <h6> Your Bmi is: {{ bmi }} </h6>
+
+</form>
+
+
+</body>
+</html>
